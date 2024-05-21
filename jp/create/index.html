@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prompt alert</title>
+    <script src="./app.js" defer></script>
+  </head>
+  <body></body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Counter</title>
+</head>
+<body>
+
+<h2>Word Counter</h2>
+
+<p>Enter your words:</p>
+
+<textarea id="wordInput" rows="4" cols="50"></textarea><br><br>
+
+<button onclick="countWords()">Count Words</button>
+
+<p id="wordCount"></p>
+
+<script src="./app.js" defer></script>
+
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Colors</title>
+<style>
+  #colorBox {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc; /* Default color */
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div id="colorBox"></div>
+<button id="changeColorBtn">Change Color</button>
+
+<script>
+  // Define an array of three colors
+  var colors = ["#ff0000", "#00ff00", "#0000ff"];
+  var currentColorIndex = 0;
+
+  // Function to change the color of the color box
+  function changeColor() {
+    var colorBox = document.getElementById('colorBox');
+    colorBox.style.backgroundColor = colors[currentColorIndex];
+    // Increment the color index
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+  }
+
+  // Attach click event listener to the button
+  document.getElementById('changeColorBtn').addEventListener('click', changeColor);
+</script>
+
+</body>
+</html>

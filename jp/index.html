@@ -1,0 +1,112 @@
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Button Demo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<button id="addButton">Button</button>
+
+<script>
+  // Function to create a new box
+  function createBox() {
+    var box = document.createElement('div');
+    box.classList.add('box');
+    box.textContent = 'Box';
+    document.body.appendChild(box);
+  }
+
+  // Get the button element
+  var addButton = document.getElementById('addButton');
+
+  // Add click event listener to the button
+  addButton.addEventListener('click', function() {
+    createBox(); // Create a new box when the button is clicked
+  });
+
+//   remove the eventlistern to button
+RemoveChildButton.RemoveEventListener("click",function() {
+    removebox();
+}
+);
+</script>
+
+</body>
+</html> - -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Colors</title>
+<style>
+  #colorBox {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc; /* Default color */
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div id="colorBox"></div>
+<button id="changeColorBtn">Change Color</button>
+
+<script>
+  // Define an array of three colors
+  var colors = ["red", "green", "orange"];
+  var currentColorIndex = 0;
+
+  // Function to change the color of the color box
+  function changeColor() {
+    var colorBox = document.getElementById('colorBox');
+    colorBox.style.backgroundColor = colors[currentColorIndex];
+    // Increment the color index
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+  }
+
+  // Attach click event listener to the button
+  document.getElementById('changeColorBtn').addEventListener('click', changeColor);
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Color</title>
+<style>
+  #color-box {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div id="color-box"></div>
+<button onclick="changeColor()">Change Color</button>
+
+<script>
+  function changeColor() {
+    var colorBox = document.getElementById("color-box");
+    // Generate random RGB values for the color
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+    // Create a CSS color string with the random RGB values
+    var randomColor = 'rgb(' + red + ', ' + green + ', ' + blue + ')';
+    // Apply the random color to the box
+    colorBox.style.backgroundColor = randomColor;
+  }
+</script>
+
+</body>
+</html>
